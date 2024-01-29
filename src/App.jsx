@@ -1,5 +1,5 @@
-import Demo from './components/Demo';
-import Hero from './components/Hero';
+import MainComponent from './components/MainComponent';
+import Header from './components/Header';
 import './App.css'
 const App = () => {
   return (
@@ -8,8 +8,8 @@ const App = () => {
             <div className='gradient'/>
         </div>
         <div className='app'>
-            <Hero/>
-            <Demo/>
+            <Header/>
+            <MainComponent/>
 
         </div>
 

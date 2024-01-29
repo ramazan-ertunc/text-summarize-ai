@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { copy, linkIcon, loader, tick } from '../assets';
 import { useLazyGetSummaryQuery } from '../services/article';
 
-const Demo = () => {
+const MainComponent = () => {
   const [article, setArticle] = useState({
     url: '',
     summary: '',
@@ -105,7 +105,7 @@ const handleCopy = (copyUrl) => {
             <h2 className="font-satoshi font-bold text-gray-600 text-xl">
               Article <span className="blue_gradient">Summary</span></h2>
               <div className="summary_box">
-                <p className="font-inter font-medium text-sm text-gray-700">
+                <p className="font-inter font-medium text-sm text-gray-700 text-justify">
                   {article.summary}
                 </p>
               </div>
@@ -117,4 +117,4 @@ const handleCopy = (copyUrl) => {
   )
 }
 
-export default Demo
+export default MainComponent

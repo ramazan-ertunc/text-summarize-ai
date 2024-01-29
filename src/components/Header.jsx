@@ -1,6 +1,6 @@
 import { logo } from '../assets';
 
-const Hero = () => {
+const Header = () => {
     return (
         <header className='w-full flex justify-center items-center flex-col'>
             <nav className='flex justify-between items-center w-full mb-10 pt-3'>
@@ -12,16 +12,17 @@ const Hero = () => {
                 </button>
             </nav>
             <h1 className='head_text'>
-                Summarize Articles with <br className='max-md:hidden' />
-                <span className='orange_gradient'>OpenAI GPT-4</span>
+                Summarize Websites with <br className='max-md:hidden' />
+                <span className='red_gradient'>OpenAI GPT-4</span>
             </h1>
-            <h2 className='desc'> Simlify your reading with Summize, 
-            an open-source article summarizer model summarizer 
-            that transforms lengthy articles into clear and concize 
-            summaries
+            <h2 className='desc'>
+                Facilitate your reading experience with Resümiere, 
+                a freely available article summarization model that 
+                condenses extensive articles into concise and clear summaries.
+
             </h2>
         </header>
     )
 }
 
-export default Hero
+export default Header
